@@ -1,6 +1,6 @@
-let express = require('express');
+var express = require('express');
 
-let app = express();
+var app = express();
 
 app.use(express.static('public'));
 
@@ -8,7 +8,7 @@ app.use(express.static('public'));
   res.send('Hello Quentin!');
 });*/
 
-const PORT = 3000
+var PORT = 3000
 
 app.listen(PORT, '0.0.0.0', function() {
   console.log('Server listening on port ' + PORT);
